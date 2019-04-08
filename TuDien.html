@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Từ Điển</title>
+</head>
+<body>
+  <script type="text/javascript">
+    let EnglishWord = ["banana", "hello", "goodmorning"];
+    let VietNamWord = ["qủa chuối", "xin chào ", "chào buổi sáng"];
+    let input = prompt("nhập từ cần dịch");
+    let output = "";
+    let flag = false;
+    for(i =0;i < EnglishWord.length ; i++)
+      if(EnglishWord[i]===input ) {
+        output = VietNamWord[i];
+        flag = true;
+        break;
+      }
+      if(flag == true)
+        alert(""+ input + "=" + output);
+      else {
+        alert("can not to search")
+      }
+
+
+  </script>
+</body>
+</html>
