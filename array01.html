@@ -9,6 +9,8 @@
     <p id="demo1"></p>
     <p id = "demo2"></p>
     <p id = "demo3"></p>
+    <p id = "demo4"></p>
+    <p id = "demo5"></p>
 <script type="text/javascript">
       let array =["toyoto","ha noi", "hochiminh", "da nang", "hai phong"];
       let a = array.join("-");// hàm nối các phần tử trong mảng lại với nhau,
@@ -17,6 +19,10 @@
       document.getElementById("demo2").innerHTML = array;
       array = array.concat("backinh", "newyork",3,[4,5])// noi hai chuoi lai voi nhau
       document.getElementById("demo3").innerHTML = array;
+      array.unshift("Pari");// thêm phần tử vào đầu mảng
+      document.getElementById("demo4").innerHTML = array;
+      array.shift();// ham xóa phần từ đầu mảng
+      document.getElementById("demo5").innerHTML = array;
 </script>
 </body>
 </html>
