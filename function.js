@@ -14,8 +14,8 @@ function checkPrimes(n){
         }
     }
   }
-    //Kiểm tra biến cờ hiệu
-  if(flag == true){
+
+  if(flag == true){ //Kiểm tra biến cờ hiệu
     document.write(n +"là số nguyên tố" + "<br/>");
   }
   else {
@@ -23,6 +23,18 @@ function checkPrimes(n){
   }
 
 }
+
+// xây dựng hàm in ra  day số
+function prinNumber() {
+    let number = document.getElementById("number").value;
+    let numbers = parseInt(number);// ép number sang kiểu number
+    let html = "";
+    for(i = 0; i< numbers;i++){
+      html+= i + " ";
+    }
+  document.getElementById("result").innerText = html;
+}
+
 
 
   
